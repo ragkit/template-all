@@ -1,0 +1,9 @@
+set shell := ["bash", "-uc"]
+set windows-shell := ["sh", "-uc"]
+
+set ignore-comments
+set positional-arguments
+
+# Print help.
+help:
+  @just {{self}} --list
