@@ -1,0 +1,18 @@
+self := "chore"
+import "../prelude/task/justfile"
+
+_default: help
+
+# Typically doesn't need to be run.
+# Format in editor/on commit should do this automatically.
+[doc("Format everything.")]
+format:
+  @pnpm format
+
+[doc("Checks formatting for CI.")]
+format-ci:
+  pnpm format:check
+
+# Check if the repo has uncommitted changes (helpful for CI).
+check-clean:
+  git diff --exit-code

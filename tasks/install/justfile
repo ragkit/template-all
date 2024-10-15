@@ -1,0 +1,10 @@
+self := "install"
+import "../prelude/task/justfile"
+
+_default: all
+
+all:
+  @pnpm install
+
+ci:
+  pnpm install --frozen-lockfile

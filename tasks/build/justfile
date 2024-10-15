@@ -1,0 +1,10 @@
+self := "build"
+import "../prelude/task/justfile"
+
+_default: all
+
+all:
+  @echo "No build script, edit 'tasks/build/justfile' to add one."
+
+ci:
+  @echo "No build script, edit 'tasks/build/justfile' to add one."

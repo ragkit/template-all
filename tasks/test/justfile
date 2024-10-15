@@ -1,0 +1,10 @@
+self := "test"
+import "../prelude/task/justfile"
+
+_default: all
+
+all:
+  @echo "No test script, edit 'tasks/test/justfile' to add one."
+
+ci:
+  @echo "No test script, edit 'tasks/test/justfile' to add one."
